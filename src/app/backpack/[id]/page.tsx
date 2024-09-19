@@ -12,7 +12,7 @@ const products = [
       id: 1,
       title: 'Premium Leather Backpack - Black',
       price: 1490,
-      oldPrice: 1990,
+ 
       brand: 'Urban Style',
       status: 'In Stock',
       desc: 'The Premium Leather Backpack from Urban Style features a sleek black design with multiple compartments for convenience. Crafted from high-quality leather, it combines style with durability, making it perfect for everyday use or travel. With an original price of 1990, this backpack is now available for 1490, offering exceptional value for its premium quality and craftsmanship.',
@@ -22,7 +22,7 @@ const products = [
       id: 2,
       title: 'Versatile Canvas Tote Bag - Grey',
       price: 690,
-      oldPrice: 990,
+ 
       brand: 'Urban Style',
       status: 'In Stock',
       desc: 'The Versatile Canvas Tote Bag from Urban Style is designed for daily use with a durable grey canvas construction. It features a spacious main compartment and sturdy handles for easy carrying. This tote bag is perfect for shopping, work, or casual outings. Originally priced at 990, it is now available for 690, offering great value for its practicality and design.',
@@ -32,7 +32,7 @@ const products = [
       id: 3,
       title: 'Travel Duffel Bag - Navy Blue',
       price: 3500,
-      oldPrice: null,
+ 
       brand: 'Urban Style',
       status: 'In Stock',
       desc: 'The Travel Duffel Bag from Urban Style is crafted for travelers seeking both style and functionality. Featuring a spacious interior and durable navy blue fabric, this bag is ideal for trips and adventures. The sleek design ensures it stands out while offering practical features for easy packing and carrying. Priced at 3500, it reflects its high quality and suitability for travel enthusiasts.',
@@ -81,11 +81,7 @@ const products = [
             <p className="text-xl sm:text-2xl text-orange-600 font-semibold mb-2">
               {product.price}৳
             </p>
-            {product.oldPrice && (
-              <p className="text-lg sm:text-xl text-red-600 line-through">
-                Old Price: {product.oldPrice}৳
-              </p>
-            )}
+          
           </div>
 
           {/* Action Buttons */}
