@@ -1,4 +1,4 @@
- "use client";
+  "use client";
 
 import { useRouter } from 'next/navigation';
 import { useParams } from 'next/navigation';
@@ -9,7 +9,7 @@ const products = [
     id: 1,
     title: 'Refreshing Perfume Oil Box 2.0',
     price: 890,
-    oldPrice: 1290,
+ 
     brand: 'Believers Sign',
     status: 'In Stock',
     desc: 'The Exclusive Twin set from Believers Sign features two premium Arabic perfume oils, each 12 ml, known for their captivating and exotic scents. This set is perfect for anyone who values unique and luxurious fragrances. The oils are crafted to offer a rich and memorable aroma experience, whether for personal use or as a refined gift. With an original price of 1900, this exclusive set is now available for 950, offering exceptional value for its quality.',
@@ -19,7 +19,7 @@ const products = [
     id: 2,
     title: 'Exclusive Twin - 12 ml',
     price: 950,
-    oldPrice: 1900,
+ 
     brand: 'Believers Sign',
     status: 'In Stock',
     desc: 'The Exclusive Twin set from Believers Sign features two premium Arabic perfume oils, each 12 ml, known for their captivating and exotic scents. This set is perfect for anyone who values unique and luxurious fragrances. The oils are crafted to offer a rich and memorable aroma experience, whether for personal use or as a refined gift. With an original price of 1900, this exclusive set is now available for 950, offering exceptional value for its quality.',
@@ -29,7 +29,7 @@ const products = [
     id: 3,
     title: 'Platinum Attar - Wooden Box',
     price: 5000,
-    oldPrice: null,
+ 
     brand: 'Believers Sign',
     status: 'In Stock',
     desc: 'Experience luxury with the Platinum Attar from Believers Sign, presented in an elegant wooden box. This attar is known for its high-quality ingredients and sophisticated fragrance, making it an excellent choice for those who appreciate a refined scent. Ideal for gifting or personal use, the wooden box adds a touch of elegance to the presentation. With a price of 5000 and no old price, it reflects its premium status and quality, making it a standout choice for fragrance lovers.',
@@ -80,11 +80,7 @@ const ProductPage = () => {
             <p className="text-xl sm:text-2xl text-orange-600 font-semibold mb-2">
               {product.price}৳
             </p>
-            {product.oldPrice && (
-              <p className="text-lg sm:text-xl text-red-600 line-through">
-                Old Price: {product.oldPrice}৳
-              </p>
-            )}
+          
           </div>
 
           {/* Action Buttons */}
@@ -106,3 +102,4 @@ const ProductPage = () => {
 };
 
 export default ProductPage;
+
