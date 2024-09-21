@@ -11,7 +11,7 @@ const ProductPage = () => {
             id: 1,
             title: 'Classic Football Jersey - Home',
             price: 890,
-            oldPrice: 1290,
+ 
             desc: 'Experience the ultimate comfort with our Classic Football Jersey, designed for home games. Made from high-quality fabric, this jersey features a classic design that ensures both style and performance. Ideal for fans and players alike, it offers a perfect fit and lasting durability.',
             image: 'https://i.postimg.cc/X7B93Q76/k-SFWW8-Sc-Rn-FPl-F4y-X3.webp',
         },
@@ -19,7 +19,7 @@ const ProductPage = () => {
             id: 2,
             title: 'Exclusive Retro Jersey - Away',
             price: 950,
-            oldPrice: 1900,
+ 
             desc: 'Our Exclusive Retro Jersey brings a touch of nostalgia with its classic away design. Crafted from premium materials, this jersey combines retro aesthetics with modern comfort. Perfect for fans who appreciate timeless style and superior quality in their sportswear.',
             image: 'https://i.postimg.cc/g29808nX/c-Vzk-Ia-N5-AMz-P5k0xb18.webp',
         },
@@ -27,20 +27,11 @@ const ProductPage = () => {
             id: 3,
             title: 'Platinum Edition Jersey - Special Box',
             price: 5000,
-            oldPrice: null,
-            discount: null,
+ 
             desc: 'The Platinum Edition Jersey comes in a special box, featuring exclusive designs and premium materials. This limited-edition jersey is a collector’s dream, offering unmatched quality and style. Ideal for those who seek exclusivity and elegance in their sportswear.',
             image: 'https://i.postimg.cc/L4bjrrSV/jd-Net-VGfn0-Wp-Np-ADG6.webp',
         },
-        {
-            id: 4,
-            title: 'Platinum Edition Jersey - Special Box',
-            price: 5000,
-            oldPrice: null,
-            discount: null,
-            desc: 'This Platinum Edition Jersey, housed in a special box, is designed for the discerning collector. With its high-end materials and unique design, it offers both luxury and performance. A perfect addition for those who value exclusivity and sophistication in their apparel.',
-            image: 'https://i.postimg.cc/nrTgh3hx/JZul1v4ar1q-MWfxp-GO7.webp',
-        },
+       
     ];
     
   const { id } = useParams();
@@ -73,23 +64,14 @@ const ProductPage = () => {
           <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">{product.title}</h1>
 
           {/* Brand and Status */}
-          <p className="text-gray-600 text-lg mb-2">
-            <strong>Brand:</strong> {product.brand}
-          </p>
-          <p className="text-green-600 text-lg mb-4">
-            <strong>Status:</strong> {product.status}
-          </p>
+      
 
           {/* Price Section */}
           <div className="mb-4">
             <p className="text-xl sm:text-2xl text-orange-600 font-semibold mb-2">
               {product.price}৳
             </p>
-            {product.oldPrice && (
-              <p className="text-lg sm:text-xl text-red-600 line-through">
-                Old Price: {product.oldPrice}৳
-              </p>
-            )}
+          
           </div>
 
           {/* Action Buttons */}
